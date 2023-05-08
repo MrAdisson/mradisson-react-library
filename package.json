@@ -1,5 +1,5 @@
 {
-    "name": "mradisson-react-library",
+    "name": "@mradisson/react-custom-tools",
     "version": "1.0.0",
     "description": "My React Library for testing to build my own custom components",
     "main": "dist/cjs/index.js",
