@@ -1,0 +1,30 @@
+{
+    "name": "my-react-library",
+    "version": "1.0.0",
+    "description": "My React Library for testing to build my own custom components",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "rm -rf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs",
+        "build:esm": "tsc",
+        "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+    },
+    "author": "MrAdisson",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^20.1.0",
+        "@types/react": "^18.2.6",
+        "@types/react-dom": "^18.2.4",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "typescript": "^5.0.4"
+    },
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    }
+}

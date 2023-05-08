@@ -1,0 +1,13 @@
+# GIT IGNORE FOR REACT LIBRARY
+
+# Dependency directories
+
+node_modules
+
+# Output of the build process
+
+dist
+
+# Packages.lock
+
+package-lock.json
