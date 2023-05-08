@@ -3,6 +3,10 @@
     "version": "1.0.0",
     "description": "My React Library for testing to build my own custom components",
     "main": "dist/cjs/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MrAdisson/mradisson-react-library.git"
+    },
     "module": "dist/esm/index.js",
     "files": [
         "dist"
