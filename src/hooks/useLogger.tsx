@@ -2,21 +2,14 @@
 
 import { useEffect } from 'react';
 
-export const useLogger = () => {
-    //GET CALLER COMPONENT INFORMATION DYNAMICALLY:
-    const getComponentName = (component: any) => {
-        return component.displayName || component.name || 'Component';
-    };
-
-    //LOG THE STATE OF THE COMPONENTS
-
+export function useLogger(this: any) {
+    console.log(this);
     useEffect(() => {
-        console.log(`%c${getComponentName(this)}: Mounted`, 'color: green');
-
+        console.log('COMPONENT MOUNTED');
         return () => {
-            console.log(`%c${getComponentName(this)}: Unmounted`, 'color: red');
+            console.log('COMPONENT UNMOUNTED');
         };
-    }, []);
-};
+    });
+}
 
 // Path: src\hooks\useLogger.tsx
