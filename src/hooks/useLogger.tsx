@@ -2,14 +2,14 @@
 
 import { useEffect } from 'react';
 
-export function useLogger(this: any) {
-    console.log(this);
+export const useLogger = (component: () => JSX.Element) => {
+    const { name } = component;
     useEffect(() => {
-        console.log('COMPONENT MOUNTED');
+        console.log(`%c${name} - COMPONENT MOUNTED`, 'color: green');
         return () => {
-            console.log('COMPONENT UNMOUNTED');
+            console.log(`%c${name} - COMPONENT UNMOUNTED`, 'color: green');
         };
     });
-}
+};
 
 // Path: src\hooks\useLogger.tsx
