@@ -1,6 +1,6 @@
 {
     "name": "@mradisson/react-custom-tools",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "My React Library for testing to build my own custom components",
     "main": "dist/cjs/index.js",
     "repository": {
@@ -25,12 +25,10 @@
         "@types/react-dom": "^18.2.4",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "typescript": "^5.0.4",
-        "chalk": "^5.2.0"
+        "typescript": "^5.0.4"
     },
     "peerDependencies": {
         "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "chalk": "^5.2.0"
+        "react-dom": "^18.2.0"
     }
 }
